@@ -8,7 +8,7 @@ function App() {
       <div className="cover-content">
         <div className="upload-box">
           <div className="upload-area">
-            <span className="upload-icon">⬆️</span>
+            <img src="/upload-icon.svg" alt="Upload Icon" className="upload-icon" />
             <p>Drag and drop file or<br /> click to upload</p>
           </div>
         </div>
