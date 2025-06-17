@@ -1,8 +1,23 @@
-.cover-bg {
-  background: #222;
+html, body { /* body of the whole screen */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cover-bg { /* making it cover the whole screen */
+  position: fixed;
+  top: 0;
+  left: 0;
   min-height: 100vh;
-  padding: 2rem;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
   color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 .navbar {
