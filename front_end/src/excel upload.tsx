@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="excel-bg">
       <NavBar />
-      <div className="excel-main">
+      <div className="excel-center">
         <div className="excel-content">
           <div className="excel-upload-box">
             <img src="/upload-icon.svg" alt="Upload Icon" className="excel-upload-icon" />
@@ -22,10 +22,10 @@ function App() {
             </ol>
           </div>
         </div>
-        <div className="excel-actions">
-          <button className="excel-remove-btn">Remove File 🗑️</button>
-          <button className="excel-analyse-btn">Analyse ▶️</button>
-        </div>
+      </div>
+      <div className="excel-actions">
+        <button className="excel-remove-btn">Remove File 🗑️</button>
+        <button className="excel-analyse-btn">Analyse ▶️</button>
       </div>
     </div>
   )

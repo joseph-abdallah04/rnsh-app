@@ -27,7 +27,14 @@ html, body {
   border-radius: 16px;
   padding: 1rem 2rem;
   margin-bottom: 2rem;
-  gap: 1rem;
+}
+
+.nav-btn-group {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly; /* Evenly space the three buttons */
+  align-items: center;
+  gap: 0; /* Remove gap if you want them truly evenly spaced */
 }
 
 .nav-btn {
@@ -48,9 +55,9 @@ html, body {
   }
 
 .settings-icon {
-  margin-left: auto;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 .cover-content {
@@ -154,14 +161,23 @@ html, body {
   justify-content: center;
 }
 
-.excel-content {
+.excel-center {
   flex: 1;
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+  min-height: 0;
+  min-width: 0;
+}
+
+.excel-content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 0 2rem;
 }
+
+/* Remove flex: 1, width: 100%, or max-width from .excel-content if present */
 
 .excel-upload-box {
   display: flex;
