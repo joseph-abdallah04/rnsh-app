@@ -1,22 +1,16 @@
-import React, { useState, useRef } from 'react';
-import './video_upload.css';
-import 
+import React from "react";
+import NavBar from "./components/nav_bar";
 
 function VideoUpload() {
+    return (
+        <div className="video-upload-page">
+            <NavBar />
+            
+            <div className="main">
 
-  return (
-	<div className="main-box">
-    
-    <div className="sidebar">
-      <h3>Frames List</h3>
-    </div>
-
-    <div className='video-display'>
-
-    </div>
-
-	</div>
-  );
+            </div>
+        </div>
+    )
 }
 
 export default VideoUpload;
