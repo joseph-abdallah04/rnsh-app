@@ -1,19 +1,15 @@
+import NavBar from './components/nav_bar'
 import './excel upload.css'
 
 function App() {
   return (
     <div className="cover-bg">
-      <div className="navbar">
-        <button className="nav-btn active">📄 Excel Upload</button>
-        <button className="nav-btn">🎬 Video Upload</button>
-        <button className="nav-btn">💬 FAQs</button>
-        <span className="settings-icon">⚙️</span>
-      </div>
+      <NavBar />
       <div className="cover-content">
         <div className="upload-box">
           <div className="upload-area">
             <span className="upload-icon">⬆️</span>
-            <p>Drag and drop file or<br />click to upload</p>
+            <p>Drag and drop file or<br /> click to upload</p>
           </div>
         </div>
         <div className="instructions">
