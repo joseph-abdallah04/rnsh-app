@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import App from '../excel_upload';
+import VideoUpload from '../video_upload';
 
 interface NavBarProps {
   activeTab: string;
@@ -6,33 +8,77 @@ interface NavBarProps {
 }
 
 function NavBar({ activeTab, onTabChange }: NavBarProps) {
+  console.log('NavBar rendered with activeTab:', activeTab); // Debug log
+
+  const handleClick = (tab: string) => {
+    console.log('Button clicked for tab:', tab); // Debug log
+    onTabChange(tab);
+  };
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'excel':
+        return <App />;
+      case 'video':
+        return <VideoUpload />;
+    }
+  };
+
   return (
-    <div className="navbar">
-      <button 
+    <div className="navbar" style={{ 
+      display: 'flex', 
+      gap: '10px', 
+      padding: '10px',
+      backgroundColor: '#333'
+    }}>
+      <button
         className={`nav-btn ${activeTab === 'excel' ? 'active' : ''}`}
-        onClick={() => onTabChange('excel')}
+        onClick={() => handleClick('excel')}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: activeTab === 'excel' ? '#007bff' : '#666',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
       >
         Excel Upload
       </button>
 
-      <button 
+      <button
         className={`nav-btn ${activeTab === 'video' ? 'active' : ''}`}
-        onClick={() => onTabChange('video')}
+        onClick={() => handleClick('video')}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: activeTab === 'video' ? '#007bff' : '#666',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
       >
         Video Upload
       </button>
 
-      <button 
+      <button
         className={`nav-btn ${activeTab === 'faqs' ? 'active' : ''}`}
-        onClick={() => onTabChange('faqs')}
+        onClick={() => handleClick('faqs')}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: activeTab === 'faqs' ? '#007bff' : '#666',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
       >
         FAQs
       </button>
-      
-      <span className="settings-icon">⚙️</span>
+
+      {renderContent()}
     </div>
-  )
+  );
 }
 
-export default NavBar
-
+export default NavBar;
