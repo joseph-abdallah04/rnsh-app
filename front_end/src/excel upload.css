@@ -1,0 +1,122 @@
+.cover-bg {
+  background: #222;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #232a36;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: #232a36;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background: #2563eb;
+  color: #fff;
+  }
+
+.settings-icon {
+  margin-left: auto;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cover-content {
+  display: flex;
+  background: #000;
+  border-radius: 16px;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.upload-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-area {
+  border: 2px dashed #888;
+  border-radius: 16px;
+  width: 320px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #181c23;
+  color: #fff;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+
+.upload-icon {
+  font-size: 2.5rem;
+}
+
+.instructions {
+  flex: 1;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.instructions h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.instructions ol {
+  margin-left: 1.5rem;
+}
+
+.cover-actions {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.remove-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analyse-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
