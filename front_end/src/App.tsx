@@ -21,18 +21,18 @@ function App() {
       case 'video':
         return <VideoUpload />;
       case 'faqs':
-        return <div style={{ padding: '20px', color: 'white' }}>FAQs content coming soon...</div>;
+        return <div style={{ padding: '20px', color: 'white', background: '#222', minHeight: '100vh' }}>FAQs content coming soon...</div>;
       default:
         return <ExcelUpload />;
     }
   };
 
   return (
-    <div>
-      <NavBar activeTab={activeTab} onTabChange={handleTabChange} />
-      <div style={{ minHeight: '100vh' }}>
-        {renderContent()}
+    <div style={{ background: '#222', minHeight: '100vh' }}>
+      <div style={{ padding: '2rem' }}>
+        <NavBar activeTab={activeTab} onTabChange={handleTabChange} />
       </div>
+      {renderContent()}
     </div>
   );
 }

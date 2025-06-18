@@ -4,7 +4,6 @@ import NavBar from './components/nav_bar.tsx'
 function ExcelUpload() {
   return (
     <div className="cover-bg">
-      <NavBar activeTab="excel_upload" onTabChange={() => {}} />
       <div className="cover-content">
         <div className="upload-box">
           <div className="upload-area">

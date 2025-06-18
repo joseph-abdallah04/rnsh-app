@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./components/nav_bar";
 
 function VideoUpload() {
     return (

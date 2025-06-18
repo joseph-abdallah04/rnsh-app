@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import App from '../excel_upload';
+import ExcelUpload from '../excel_upload';
 import VideoUpload from '../video_upload';
 
 interface NavBarProps {
@@ -18,30 +18,17 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
   const renderContent = () => {
     switch (activeTab) {
       case 'excel':
-        return <App />;
+        return <ExcelUpload />;
       case 'video':
         return <VideoUpload />;
     }
   };
 
   return (
-    <div className="navbar" style={{ 
-      display: 'flex', 
-      gap: '10px', 
-      padding: '10px',
-      backgroundColor: '#333'
-    }}>
+    <div className="navbar">
       <button
         className={`nav-btn ${activeTab === 'excel' ? 'active' : ''}`}
         onClick={() => handleClick('excel')}
-        style={{
-          padding: '10px 20px',
-          backgroundColor: activeTab === 'excel' ? '#007bff' : '#666',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
       >
         Excel Upload
       </button>
@@ -49,14 +36,6 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
       <button
         className={`nav-btn ${activeTab === 'video' ? 'active' : ''}`}
         onClick={() => handleClick('video')}
-        style={{
-          padding: '10px 20px',
-          backgroundColor: activeTab === 'video' ? '#007bff' : '#666',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
       >
         Video Upload
       </button>
@@ -64,19 +43,12 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
       <button
         className={`nav-btn ${activeTab === 'faqs' ? 'active' : ''}`}
         onClick={() => handleClick('faqs')}
-        style={{
-          padding: '10px 20px',
-          backgroundColor: activeTab === 'faqs' ? '#007bff' : '#666',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
       >
         FAQs
       </button>
 
-      {renderContent()}
+      <div className="settings-icon">⚙️</div>
+
     </div>
   );
 }
