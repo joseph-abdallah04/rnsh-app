@@ -10,4 +10,4 @@ wheels/
 .venv
 
 # Other directories
-sample_data/sample.csv
+sample_data/
