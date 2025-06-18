@@ -1,10 +1,9 @@
-import NavBar from './components/nav_bar'
-import './excel upload.css'
+import './excel_upload.css'
 
-function App() {
+function ExcelUpload() {
   return (
-    <div className="cover-bg">
-      <NavBar />
+    <div className="excel-upload-container">
+
       <div className="cover-content">
         <div className="upload-box">
           <div className="upload-area">
@@ -29,4 +28,4 @@ function App() {
     </div>
   )
 }
-export default App
+export default ExcelUpload
