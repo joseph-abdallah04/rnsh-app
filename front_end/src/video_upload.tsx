@@ -4,6 +4,7 @@ import './video_upload.css';
 function VideoUpload() {
     return (
         <div className="video-upload-page">
+            
             <div className="main-box">
                 <div className="upload-video-box">
                     <p>Drag and drop file or</p> 

@@ -17,6 +17,8 @@ function MainApp() {
         return <VideoUpload />;
       case 'faqs':
         return <div>FAQs content coming soon...</div>;
+      case 'settings':
+        return <div>Settings content coming soon...</div>;
       default:
         return <ExcelUpload />;
     }

@@ -29,7 +29,12 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
         FAQs
       </button>
       
-      <span className="settings-icon">⚙️</span>
+      <button
+        className={`nav-btn ${activeTab === 'settings' ? 'active' : ''}`}
+        onClick={() => onTabChange('settings')}
+      >
+        Settings
+      </button>
     </div>
   )
 }
