@@ -12,6 +12,7 @@ function App() {
             <p className="excel-upload-title">Upload Icon</p>
             <p className="excel-upload-desc">Drag and drop file or<br />click to upload</p>
           </div>
+
           <div className="excel-instructions">
             <h2>Upload Instructions for data file</h2>
             <p>Insert upload instructions here. Follow these instructions:</p>
@@ -23,9 +24,22 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="excel-actions">
-        <button className="excel-remove-btn">Remove File 🗑️</button>
-        <button className="excel-analyse-btn">Analyse ▶️</button>
+
+      <div className="excel-floating-actions"> 
+        <button
+          className="excel-remove-btn"
+          disabled={!file}
+          onClick={handleRemoveFile}
+        >
+          Remove File 🗑️
+        </button>
+        <button
+          className={`excel-analyse-btn${file ? '' : ' disabled'}`}
+          disabled={!file}
+          onClick={handleAnalyse}
+        >
+          Analyse ▶️
+        </button>
       </div>
     </div>
   )

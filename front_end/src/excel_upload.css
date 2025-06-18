@@ -269,3 +269,26 @@ html, body { /* black screen */
   align-items: center;
   gap: 0.5rem;
 }
+
+.excel-floating-actions { /* bottom buttons to go uo */ 
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 12.5vh; /* Higher up from the bottom, adjust as needed */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0.85;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .excel-floating-actions {
+    bottom: 5vh; /* Lower on small screens */
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
