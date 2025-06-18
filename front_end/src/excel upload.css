@@ -21,15 +21,21 @@ html, body { /* black screen */
 }
 
 .navbar { /* tool heading */ 
-  display: flex;
-  align-items: center;
   background: #232a36;
   border-radius: 16px;
   padding: 1rem 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem; /* pushing the navbar down */
 }
 
-.nav-btn-group {
+.navbar-items { /* the flex container for each title*/ 
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly; /* Evenly space all 4 items */
+  align-items: center;
+}
+
+.nav-btn-group { /* background of nav bar- all 4 titles together */
   display: flex;
   flex: 1;
   justify-content: space-evenly; /* Evenly space the three buttons */
@@ -49,7 +55,7 @@ html, body { /* black screen */
   transition: background 0.2s;
 }
 
-.nav-btn.active, .nav-btn:hover {
+.nav-btn.active, .nav-btn:hover { /* hover = makes others blue when chosen */ 
   background: #2563eb;
   color: #fff;
   }
@@ -222,11 +228,18 @@ html, body { /* black screen */
   margin-top: 0.5rem;
 }
 
-.excel-actions {
+.excel-actions { /* coontrols 2 buttons at the bottom */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px; 
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  opacity: 0.75; /* how bright */
+  z-index: 10; /* how far above the blk background*/
+  /* margin-top: 2rem; */
+  pointer-events: auto; /* clicked on */ 
 }
 
 .excel-remove-btn {
