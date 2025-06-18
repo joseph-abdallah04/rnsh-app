@@ -1,5 +1,5 @@
 import NavBar from './components/nav_bar'
-import './excel upload.css'
+import './excel_upload.css'
 
 function App() {
   return (

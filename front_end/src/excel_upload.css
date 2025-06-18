@@ -167,20 +167,22 @@ html, body { /* black screen */
   justify-content: center;
 }
 
-.excel-center {
+.excel-center { /*  middle boxes layout */
   flex: 1;
   display: flex;
-  align-items: center;      /* vertical centering */
+  align-items: flex-start;      /* vertical centering */
   justify-content: center;  /* horizontal centering */
   min-height: 0;
   min-width: 0;
+  margin-top: 1rem; /* more spaqce from the top */
+  margin-left: 6rem; /* to put boxes more to the right*/
 }
 
-.excel-content {
+.excel-content { /* between the 2 boxes in middle*/ 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem; /* increasing space between them */ 
 }
 
 /* Remove flex: 1, width: 100%, or max-width from .excel-content if present */
