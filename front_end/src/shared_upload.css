@@ -270,14 +270,6 @@ html, body { /* black screen */
   gap: 0.5rem;
 }
 
-.excel-analyse-btn.disabled, /* making the analyse buttton disappear*/
-.excel-analyse-btn:disabled {
-  background: #7d91d6 !important; /* lighter blue */
-  color: #e0e0e0 !important;
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
 .excel-floating-actions { /* bottom buttons to go uo */ 
   position: fixed;
   left: 0;
@@ -286,7 +278,7 @@ html, body { /* black screen */
   display: flex;
   justify-content: center;
   gap: 2rem;
-  opacity: 0.70;
+  opacity: 0.85;
   z-index: 10;
   pointer-events: auto;
 }
@@ -299,4 +291,3 @@ html, body { /* black screen */
     align-items: center;
   }
 }
-

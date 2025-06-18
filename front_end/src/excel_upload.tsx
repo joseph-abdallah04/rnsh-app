@@ -1,7 +1,17 @@
 import NavBar from './components/nav_bar'
 import './excel_upload.css'
+import React, { useState } from 'react';
 
 function App() {
+  const [file, setFile] = useState<File | null>(null);
+
+  // Example handler for file upload (replace with your actual logic)
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files[0]) {
+      setFile(event.target.files[0]);
+    }
+  };
+
   return (
     <div className="excel-bg">
       <NavBar />
@@ -11,6 +21,7 @@ function App() {
             <img src="/upload-icon.png" alt="Upload Icon" className="excel-upload-icon" />
             <p className="excel-upload-title">Upload Icon</p>
             <p className="excel-upload-desc">Drag and drop file or<br />click to upload</p>
+            <input type="file" onChange={handleFileUpload} />
           </div>
 
           <div className="excel-instructions">
@@ -26,11 +37,16 @@ function App() {
       </div>
 
       <div className="excel-floating-actions"> 
-        <button className="excel-remove-btn">Remove File 🗑️</button>
-        <button className="excel-analyse-btn">Analyse ▶️</button>
+        <button className="excel-remove-btn" onClick={() => setFile(null)}>Remove File 🗑️</button>
+        <button
+          className={`excel-analyse-btn${!file ? ' disabled' : ''}`}
+          disabled={!file}
+        >
+          Analyse ▶️
+        </button>
       </div>
     </div>
-  )
+  );
 }
 
 export default App
