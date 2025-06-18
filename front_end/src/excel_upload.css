@@ -271,10 +271,10 @@ html, body { /* black screen */
 }
 
 .excel-analyse-btn.disabled, /* making the analyse buttton disappear*/
-.excel-analyse-btn:disabled {
+.excel-analyse-btn:disabled { /* then reappear when file is linked*/
   background: #7d91d6 !important; /* lighter blue */
   color: #e0e0e0 !important;
-  opacity: 0.6;
+  opacity: 90; 
   cursor: not-allowed;
 }
 
@@ -286,7 +286,7 @@ html, body { /* black screen */
   display: flex;
   justify-content: center;
   gap: 2rem;
-  opacity: 0.70;
+  opacity: 1; /* brightness of blue whyen file is added*/
   z-index: 10;
   pointer-events: auto;
 }
