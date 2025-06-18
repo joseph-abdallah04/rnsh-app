@@ -8,7 +8,7 @@ function App() {
       <div className="excel-center">
         <div className="excel-content">
           <div className="excel-upload-box">
-            <img src="/upload-icon.svg" alt="Upload Icon" className="excel-upload-icon" />
+            <img src="../upload-icon.png" alt=" Icon" className="excel-upload-icon" />
             <p className="excel-upload-title">Upload Icon</p>
             <p className="excel-upload-desc">Drag and drop file or<br />click to upload</p>
           </div>
@@ -26,20 +26,8 @@ function App() {
       </div>
 
       <div className="excel-floating-actions"> 
-        <button
-          className="excel-remove-btn"
-          disabled={!file}
-          onClick={handleRemoveFile}
-        >
-          Remove File 🗑️
-        </button>
-        <button
-          className={`excel-analyse-btn${file ? '' : ' disabled'}`}
-          disabled={!file}
-          onClick={handleAnalyse}
-        >
-          Analyse ▶️
-        </button>
+        <button className="excel-remove-btn">Remove File 🗑️</button>
+        <button className="excel-analyse-btn">Analyse ▶️</button>
       </div>
     </div>
   )
