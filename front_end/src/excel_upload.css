@@ -195,8 +195,15 @@ html, body { /* black screen */
   border: 2px dashed #888;
   border-radius: 16px;
   background: #181c23;
-  width: 580px; /* diminsions as needed */ 
-  height: 410px;
+  padding-top: 4rem;  
+  width: 520px; /* diminsions as needed */ 
+  height: 400px;
+}
+/* this one is to shift the "choose file" button further down*/
+.excel-upload-box input[type="file"] {
+  margin-top: 5rem; /* Increase this value to lower it more */
+  opacity: 0.95;      /* Makes the input itself more opaque */
+  /* align-items: center; */
 }
 
 .excel-upload-icon {
@@ -282,13 +289,34 @@ html, body { /* black screen */
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 12.5vh; /* Higher up from the bottom, adjust as needed */
+  bottom: 8.8vh; /* Higher up from the bottom, adjust as needed */
   display: flex;
   justify-content: center;
   gap: 2rem;
-  opacity: 1; /* brightness of blue whyen file is added*/
+  opacity: 1; /* brightness of blue when file is added*/
   z-index: 10;
   pointer-events: auto;
+}
+/* "choose file" button */
+.custom-file-upload {
+  display: inline-block;
+  margin-top: 2.5rem; /* Lower the button */
+  padding: 0.5em 1.2em;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.file-chosen-text {
+  display: block;
+  margin-top: 1rem;
+  color: #fff;
+  opacity: 1; /* Fully opaque */
+  font-size: 1em;
+  text-align: center;
 }
 
 @media (max-width: 600px) {

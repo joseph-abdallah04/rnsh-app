@@ -6,6 +6,7 @@ function App() {
   const [file, setFile] = useState<File | null>(null);
 
   // Example handler for file upload (replace with your actual logic)
+  // not sure what this added- but for the upload linking file functionality 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
       setFile(event.target.files[0]);
