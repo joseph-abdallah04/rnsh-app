@@ -1,4 +1,4 @@
-
+import './nav_bar.css';
 
 interface NavBarProps {
   activeTab: string;
@@ -9,12 +9,11 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
   return (
     <div className="navbar">
       <button 
-        className={`nav-btn ${activeTab === 'excel' ? 'active' : ''}`}
-        onClick={() => onTabChange('excel')}
+        className={`nav-btn ${activeTab === 'csv' ? 'active' : ''}`}
+        onClick={() => onTabChange('csv')}
       >
-        Excel Upload
+        CSV Upload
       </button>
-
       <button 
         className={`nav-btn ${activeTab === 'video' ? 'active' : ''}`}
         onClick={() => onTabChange('video')}
@@ -22,13 +21,6 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
         Video Upload
       </button>
 
-      <button 
-        className={`nav-btn ${activeTab === 'faqs' ? 'active' : ''}`}
-        onClick={() => onTabChange('faqs')}
-      >
-        FAQs
-      </button>
-      
       <button
         className={`nav-btn ${activeTab === 'settings' ? 'active' : ''}`}
         onClick={() => onTabChange('settings')}
@@ -40,5 +32,5 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
 }
 
 export default NavBar
-/* Line 7- active= make title blue */ 
+/* Line 7- active= make title blue */
 

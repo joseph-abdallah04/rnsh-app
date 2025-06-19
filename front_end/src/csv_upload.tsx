@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './upload_page.css';
 
-function VideoUpload() {
+function CSVUpload() {
   const [file, setFile] = useState<File | null>(null);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,16 +15,16 @@ function VideoUpload() {
       <div className="upload-center">
         <div className="upload-content">
           <div className="upload-box">
-            <p>Drag and drop video file or<br />click to upload</p>
-            <input type="file" accept="video/*" onChange={handleFileUpload} />
+            <p>Drag and drop CSV file or<br />click to upload</p>
+            <input type="file" accept=".csv" onChange={handleFileUpload} />
           </div>
           <div className="instructions-box">
-            <h2>Upload Instructions for Video File</h2>
+            <h2>Upload Instructions for CSV File</h2>
             <p>Insert upload instructions here. Follow these instructions:</p>
             <ol>
-              <li>Instruction one for video</li>
-              <li>Instruction two for video</li>
-              <li>Instruction three for video</li>
+              <li>Instruction one for CSV</li>
+              <li>Instruction two for CSV</li>
+              <li>Instruction three for CSV</li>
             </ol>
           </div>
         </div>
@@ -46,4 +46,4 @@ function VideoUpload() {
   );
 }
 
-export default VideoUpload;
+export default CSVUpload;

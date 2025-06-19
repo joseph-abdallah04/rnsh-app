@@ -1,20 +1,19 @@
 import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import ExcelUpload from './excel_upload.tsx'
+import CSVUpload from './csv_upload.tsx'
 import VideoUpload from './video_upload.tsx';
 import NavBar from './components/nav_bar.tsx';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('excel');
+  const [activeTab, setActiveTab] = useState('csv');
 
   const rendercontent = () => {
     switch (activeTab) {
-      case 'excel': return <ExcelUpload />;
+      case 'csv': return <CSVUpload />;
       case 'video': return <VideoUpload />;
-      case 'faqs': return <div>FAQs content coming soon...</div>;
       case 'settings': return <div>Settings content coming soon...</div>;
-      default: return <ExcelUpload />;
+      default: return <CSVUpload />;
     }
   };
 
