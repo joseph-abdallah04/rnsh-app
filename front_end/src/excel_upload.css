@@ -20,6 +20,14 @@ html, body { /* body of the whole screen */
   overflow: auto;
 }
 
+.excel-upload-container {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+  min-height: calc(100vh - 100px);
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -45,7 +53,7 @@ html, body { /* body of the whole screen */
 .nav-btn.active, .nav-btn:hover {
   background: #2563eb;
   color: #fff;
-  }
+}
 
 .settings-icon {
   margin-left: auto;

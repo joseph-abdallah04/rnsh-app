@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "./components/nav_bar";
+import './video_upload.css';
 
 function VideoUpload() {
     return (
         <div className="video-upload-page">
+            
             <div className="main-box">
                 <div className="upload-video-box">
-                    <img src="/upload-icon.svg" alt="Upload Icon" className="upload-icon" />
                     <p>Drag and drop file or</p> 
                     <p>click to upload</p>
                 </div>
@@ -15,8 +15,8 @@ function VideoUpload() {
                     <h2>Instructions for Data File Input</h2>
                     <p>Insert instructions for upload here. Follow these instructions:</p>
                     <ol>
-                        <li>1. Instruction</li>
-                        <li>2. Instruction</li>
+                        <li>Instruction</li>
+                        <li>Instruction</li>
                     </ol>
                 </div>
             </div>
