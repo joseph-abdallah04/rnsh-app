@@ -17,9 +17,8 @@ function ExcelUpload() {
     <div className="excel-bg">
       <div className="excel-center">
         <div className="excel-content">
-          <div className="excel-upload-box">
-          
-            <p className="excel-upload-desc">Drag and drop file or<br />click to upload</p>
+          <div className="excel-upload-area">
+            <p>Drag and drop file or<br />click to upload</p>
             <input type="file" onChange={handleFileUpload} />
           </div>
 

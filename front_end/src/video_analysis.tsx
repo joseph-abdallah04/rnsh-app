@@ -6,7 +6,7 @@ function VideoAnalysis() {
 
   return (
     <div className='video-analysis-page'>
-      <NavBar />
+
       <div className="main-box">
         
         <div className="sidebar">

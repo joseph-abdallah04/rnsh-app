@@ -12,9 +12,9 @@ function App() {
     switch (activeTab) {
       case 'excel': return <ExcelUpload />;
       case 'video': return <VideoUpload />;
-      case 'faqs': return ;
-      case 'settings': return;
-      default: return <App />;
+      case 'faqs': return <div>FAQs content coming soon...</div>;
+      case 'settings': return <div>Settings content coming soon...</div>;
+      default: return <ExcelUpload />;
     }
   };
 
