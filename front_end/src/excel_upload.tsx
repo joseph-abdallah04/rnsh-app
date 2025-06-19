@@ -2,7 +2,7 @@ import NavBar from './components/nav_bar'
 import './excel_upload.css'
 import React, { useState } from 'react';
 
-function App() {
+function ExcelUpload() {
   const [file, setFile] = useState<File | null>(null);
 
   // Example handler for file upload (replace with your actual logic)
@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="excel-bg">
-      <NavBar />
       <div className="excel-center">
         <div className="excel-content">
           <div className="excel-upload-box">
@@ -53,4 +52,4 @@ function App() {
   );
 }
 
-export default App
+export default ExcelUpload
