@@ -14,7 +14,7 @@ html, body { /* black screen */
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding-top: 80px; /* Add this line to push content below nav bar */
+  padding-top: 175px; /* increases space between content and nav bar */
 }
 
 .upload-center {
