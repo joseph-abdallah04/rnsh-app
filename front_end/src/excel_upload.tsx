@@ -38,12 +38,12 @@ function App() {
       </div>
 
       <div className="excel-floating-actions"> 
-        <button className="excel-remove-btn" onClick={() => setFile(null)}>Remove File 🗑️</button>
+        <button className="excel-remove-btn" onClick={() => setFile(null)}>Remove File </button>
         <button
           className={`excel-analyse-btn${!file ? ' disabled' : ''}`}
           disabled={!file}
         >
-          Analyse ▶️
+          Analyse 
         </button>
       </div>
     </div>

@@ -201,8 +201,9 @@ html, body { /* black screen */
 }
 /* this one is to shift the "choose file" button further down*/
 .excel-upload-box input[type="file"] {
-  margin-top: 5rem; /* Increase this value to lower it more */
+  margin-top: 2.5rem; /* Increase this value to lower it more */
   opacity: 0.95;      /* Makes the input itself more opaque */
+  margin-left: 6rem; /* move to the right*/
   /* align-items: center; */
 }
 
@@ -300,7 +301,7 @@ html, body { /* black screen */
 /* "choose file" button */
 .custom-file-upload {
   display: inline-block;
-  margin-top: 2.5rem; /* Lower the button */
+  margin-top: 5rem; /* Lower the button */
   padding: 0.5em 1.2em;
   background: #fff;
   color: #000;
