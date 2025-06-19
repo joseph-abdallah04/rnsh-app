@@ -19,8 +19,7 @@ function App() {
       <div className="excel-center">
         <div className="excel-content">
           <div className="excel-upload-box">
-            <img src="/upload-icon.png" alt="Upload Icon" className="excel-upload-icon" />
-            <p className="excel-upload-title">Upload Icon</p>
+          
             <p className="excel-upload-desc">Drag and drop file or<br />click to upload</p>
             <input type="file" onChange={handleFileUpload} />
           </div>
