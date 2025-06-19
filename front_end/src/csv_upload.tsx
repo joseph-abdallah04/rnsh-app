@@ -3,10 +3,19 @@ import './upload_page.css';
 
 function CSVUpload() {
   const [file, setFile] = useState<File | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
-      setFile(event.target.files[0]);
+      const uploadedFile = event.target.files[0];
+      const isCSV = uploadedFile.type === 'text/csv' || uploadedFile.name.endsWith('.csv');
+      if (isCSV) {
+        setFile(uploadedFile);
+        setError(null);
+      } else {
+        setFile(null);
+        setError('Please upload a valid CSV file.');
+      }
     }
   };
 
@@ -17,6 +26,7 @@ function CSVUpload() {
           <div className="upload-box">
             <p>Drag and drop CSV file or<br />click to upload</p>
             <input type="file" accept=".csv" onChange={handleFileUpload} />
+            {error && <span style={{ color: 'red', marginTop: '1rem' }}>{error}</span>}
           </div>
           <div className="instructions-box">
             <h2>Upload Instructions for CSV File</h2>
