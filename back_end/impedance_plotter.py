@@ -6,12 +6,12 @@ ts = 1/fs  # Sampling frequency in seconds
 
 # Load the data from a CSV file
 data = pd.read_csv('sample_data/sample.csv', delimiter='\t')
-
+#data = pd.read_csv('sample_data/sample_2.csv', delimiter=',')
 # Generate time axis based on number of rows and sampling time
 time = data.index*ts
 
 def plot_r5_and_volume():
-    fig, ax1 = plt.subplots()
+    fig, ax1 = plt.subplots(figsize=(15, 5))
     color_r5 = 'tab:blue'
     color_vol = 'tab:red'
 
