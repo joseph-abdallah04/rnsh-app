@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 interface NavBarProps {
   activeTab: string;
@@ -40,4 +40,5 @@ function NavBar({ activeTab, onTabChange }: NavBarProps) {
 }
 
 export default NavBar
+/* Line 7- active= make title blue */ 
 
