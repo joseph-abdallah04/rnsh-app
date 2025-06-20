@@ -1,14 +1,15 @@
 .navbar {
   position: fixed;
   top: 1rem;
-  left: 1rem;
-  right: 1rem;
-  width: calc(100vw - 8rem);
+  left: 2rem;
+  right: 2rem;
   z-index: 100;
   background: #232a36;
   border-radius: 16px;
   padding: 1rem 2rem;
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+  /* Add a semi-transparent border */
+  border: 1px solid rgba(124, 124, 126, 0.15);
+  /* Add a subtle glow/shadow */
   display: flex;
   justify-content: center;
 }

@@ -24,7 +24,8 @@ function CSVUpload() {
       <div className="upload-center">
         <div className="upload-content">
           <div className="upload-box">
-            <p>Upload CSV file</p>
+            <img src="/upload-icon.png" alt="Upload icon" style={{ width: 64, height: 64, marginBottom: 16 }} />
+            <h1>Upload .csv File</h1>
             <label className="file-upload-btn">
               Choose file
               <input
@@ -43,8 +44,8 @@ function CSVUpload() {
             <ol>
               <li>Click the "Choose File" button</li>
               <li>Select a CSV file from your computer</li>
-              <li>To perform calculations and receive results, click the "Analyse" button</li>
-              <li>If you choose the wrong file, click the "Remove" button to choose another one</li>
+              <li>To perform calculations and receive results, <br />click the "Analyse" button</li>
+              <li>If you choose the wrong file, click the <br /> "Remove" button to choose another one</li>
             </ol>
           </div>
         </div>
