@@ -26,7 +26,7 @@ function VideoUpload() {
       <div className="upload-center">
         <div className="upload-content">
           <div className="upload-box">
-            <p>Drag and drop MP4 video file or<br />click to upload</p>
+            <p>Upload .mp4 File</p>
             <label className="file-upload-btn">
               Choose file
               <input

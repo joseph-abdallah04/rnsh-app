@@ -24,7 +24,7 @@ function CSVUpload() {
       <div className="upload-center">
         <div className="upload-content">
           <div className="upload-box">
-            <p>Drag and drop CSV file or<br />click to upload</p>
+            <p>Upload CSV file</p>
             <label className="file-upload-btn">
               Choose file
               <input
