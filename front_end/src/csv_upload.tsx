@@ -25,7 +25,16 @@ function CSVUpload() {
         <div className="upload-content">
           <div className="upload-box">
             <p>Drag and drop CSV file or<br />click to upload</p>
-            <input type="file" accept=".csv" onChange={handleFileUpload} />
+            <label className="file-upload-btn">
+              Choose file
+              <input
+                type="file"
+                accept=".csv"
+                onChange={handleFileUpload}
+                style={{ display: 'none' }}
+              />
+            </label>
+            {file && <span className="file-name">{file.name}</span>}
             {error && <span style={{ color: 'red', marginTop: '1rem' }}>{error}</span>}
           </div>
           <div className="instructions-box">

@@ -3,6 +3,7 @@ html, body { /* black screen */
   margin: 0;
   padding: 0;
   background: #000;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 .upload-bg {
@@ -14,7 +15,8 @@ html, body { /* black screen */
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding-top: 175px; /* increases space between content and nav bar */
+  padding-top: 90px; /* Adjust to match nav bar height */
+  box-sizing: border-box;
 }
 
 .upload-center {
@@ -37,12 +39,12 @@ html, body { /* black screen */
 .upload-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* ensures all children are centered horizontally */
   justify-content: center;
   border: 2px dashed #888;
   border-radius: 16px;
-  width: 320px;
-  height: 360px;
+  width: 450px;
+  height: 500px;
   background: #181c23;
   color: #fff;
   font-size: 1.2rem;
@@ -52,6 +54,7 @@ html, body { /* black screen */
 .upload-box p {
   margin: 0;
   text-align: center;
+  width: 100%;
   line-height: 1.4;
   opacity: 0.9;
 }
@@ -59,6 +62,12 @@ html, body { /* black screen */
 .upload-box input[type="file"] {
   margin-top: 2.5rem;
   opacity: 0.95;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%; /* or 100% for full width */
+  max-width: 250px;
 }
 
 /* Instructions box */
@@ -138,6 +147,34 @@ html, body { /* black screen */
   color: #e0e0e0 !important;
   opacity: 0.9;
   cursor: not-allowed;
+}
+
+/* File upload button and filename */
+.file-upload-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 2.5rem;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.file-upload-btn:hover {
+  background: #1a47b8;
+}
+
+.file-name {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.85;
+  display: block;
+  text-align: center;
 }
 
 /* Responsive design */
