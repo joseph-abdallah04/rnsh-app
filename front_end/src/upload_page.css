@@ -184,6 +184,13 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Upload icon */
+.upload-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
 /* Responsive design */
 @media (max-width: 900px) {
   .upload-content {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './upload_page.css';
+import uploadIcon from './assets/uploadIcon.png';
 
 function VideoUpload() {
   const [file, setFile] = useState<File | null>(null);
@@ -26,6 +27,7 @@ function VideoUpload() {
       <div className="upload-center">
         <div className="upload-content">
           <div className="upload-box">
+            <img src={uploadIcon} alt="Upload icon" className="upload-icon" />
             <h1>Upload .mp4 File</h1>
             <label className="file-upload-btn">
               Choose file
