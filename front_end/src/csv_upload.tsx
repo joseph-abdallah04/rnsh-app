@@ -38,12 +38,13 @@ function CSVUpload() {
             {error && <span style={{ color: 'red', marginTop: '1rem' }}>{error}</span>}
           </div>
           <div className="instructions-box">
-            <h2>Upload Instructions for CSV File</h2>
+            <h2>Instructions for CSV File Upload</h2>
             <p>Insert upload instructions here. Follow these instructions:</p>
             <ol>
-              <li>Instruction one for CSV</li>
-              <li>Instruction two for CSV</li>
-              <li>Instruction three for CSV</li>
+              <li>Click the "Choose File" button</li>
+              <li>Select a CSV file from your computer</li>
+              <li>To perform calculations and receive results, click the "Analyse" button</li>
+              <li>If you choose the wrong file, click the "Remove" button to choose another one</li>
             </ol>
           </div>
         </div>

@@ -40,7 +40,7 @@ function VideoUpload() {
             {error && <span style={{ color: 'red', marginTop: '1rem' }}>{error}</span>}
           </div>
           <div className="instructions-box">
-            <h2>Upload Instructions for MP4 Video File</h2>
+            <h2>Instructions for MP4 Video File Upload</h2>
             <p>Insert upload instructions here. Follow these instructions:</p>
             <ol>
               <li>Instruction one for MP4 video</li>
