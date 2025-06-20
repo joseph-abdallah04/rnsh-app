@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './upload_page.css';
+import { ReactComponent as UploadIcon } from './assets/upload-icon.svg';
 
 function CSVUpload() {
   const [file, setFile] = useState<File | null>(null);
@@ -24,7 +25,7 @@ function CSVUpload() {
       <div className="upload-center">
         <div className="upload-content">
           <div className="upload-box">
-            <img src="/upload-icon.png" alt="Upload icon" style={{ width: 64, height: 64, marginBottom: 16 }} />
+            <UploadIcon style={{ width: 64, height: 64, marginBottom: 16 }} />
             <h1>Upload .csv File</h1>
             <label className="file-upload-btn">
               Choose file
