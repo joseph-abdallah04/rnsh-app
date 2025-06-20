@@ -45,9 +45,10 @@ function VideoUpload() {
             <h2>Instructions for MP4 Video File Upload</h2>
             <p>Insert upload instructions here. Follow these instructions:</p>
             <ol>
-              <li>Instruction one for MP4 video</li>
-              <li>Instruction two for MP4 video</li>
-              <li>Instruction three for MP4 video</li>
+              <li>Click the "Choose File" button</li>
+              <li>Select a MP4 file from your computer</li>
+              <li>To perform calculations and receive results, <br />click the "Analyse" button</li>
+              <li>If you choose the wrong file, click the <br /> "Remove" button to choose another one</li>
             </ol>
           </div>
         </div>
