@@ -8,8 +8,9 @@ const VideoUpload = () => {
         accept=".mp4"
         buttonLabel="Analyse"
         fileLabel="Choose file"
+        navigateTo="/video-analysis"
         onAnalyse={(file) => {
-          console.log("Analyzing CSV:", file)
+          console.log("Analyzing Video:", file)
         }}
         instructionList={[
           'Click the "Choose File" button"',

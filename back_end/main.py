@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, Query
 from fastapi.responses import JSONResponse, Response
+from fastapi.middleware.cors import CORSMiddleware
 import tempfile
 import logging
 import uuid
@@ -19,6 +20,15 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI()
+
+# Add CORS Middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"], # The Vite dev server
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 # Directory to store videos - Creates directory if it doesn't already exist
 VIDEO_STORAGE_DIR = "/tmp/current_video"

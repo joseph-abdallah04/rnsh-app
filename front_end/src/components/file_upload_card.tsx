@@ -8,6 +8,7 @@ interface FileUploadCardProps {
   buttonLabel?: string
   fileLabel?: string
   instructionList?: string[]
+  navigateTo?: string  // Add this prop
 }
 
 const FileUploadCard: React.FC<FileUploadCardProps> = ({
@@ -16,6 +17,7 @@ const FileUploadCard: React.FC<FileUploadCardProps> = ({
   buttonLabel = 'Analyse',
   fileLabel = 'Choose File',
   instructionList = [],
+  navigateTo = '/csv-results'  // Default to CSV results
 }) => {
   const [file, setFile] = useState<File | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -49,7 +51,7 @@ const handleAnalyse = () => {
   setTimeout(() => {
     setIsAnalysing(false)
     onAnalyse(file)
-    navigate('/csv-results')
+    navigate(navigateTo)  // Use the prop instead of hardcoded path
   }, 1000)
 }
 
